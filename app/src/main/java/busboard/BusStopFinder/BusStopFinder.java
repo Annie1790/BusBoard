@@ -7,34 +7,32 @@ import java.net.http.HttpResponse;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
-import com.google.gson.stream.JsonReader;
-
 import java.net.http.HttpRequest;
 
 public class BusStopFinder {
-    String result = "";
 
-    public void getter() {
+    public void fetchLatitudeAndLongitude(String userInput) {
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("http://api.postcodes.io/postcodes/se167tn"))
+                .uri(URI.create("http://api.postcodes.io/postcodes/" + userInput))
                 .GET()
                 .build();
 
-        String cf = client.sendAsync(request, HttpResponse.BodyHandlers.ofString())
-                .thenApply(HttpResponse::body)
+        String response = client.sendAsync(request, HttpResponse.BodyHandlers.ofString())
+                .thenApply(HttpResponse::body) // tells the httpresponse instance(which has been stored) to use the body
+                                               // method(thenapply is a public method of completablefuture class)
                 .join();
-            deserialize(cf);
+
+        deserializeLatitudeAndLongitude(response);
     }
 
-    public void deserialize(String string) {
+    public void deserializeLatitudeAndLongitude(String string) {
         try {
             JSONObject object = new JSONObject(string);
             JSONObject result = object.getJSONObject("result");
             String longitude = result.getString("longitude");
-            System.out.println(longitude);
+            String latitude = result.getString("latitude");
+            System.out.println("Latitude: " + latitude + "; " + "Longitude: " + longitude + ";");
         } catch (JSONException e) {
             e.printStackTrace();
         }
