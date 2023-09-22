@@ -16,6 +16,6 @@ public class App {
         System.out.print("Please enter a postcode: ");
         String userInput = scanner.nextLine().replaceAll("\\s", "");
         System.out.println("The nearest bus station is: ");
-        busStopFinder.fetchLatitudeAndLongitude(userInput);
+        busStopFinder.doThis(userInput);
     }
 }
