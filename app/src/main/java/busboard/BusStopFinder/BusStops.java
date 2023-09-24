@@ -4,16 +4,15 @@ import java.util.ArrayList;
 
 public class BusStops {
     String commonName;
-    double distance;
-    ArrayList<Bus> busList = new ArrayList<>();
+    String stopId;
+    ArrayList<ArrivingBus> busList = new ArrayList<>();
 
-    public BusStops(String name, double distance, ArrayList<Bus> busList) {
+    public BusStops(String name, String stopId, ArrayList<ArrivingBus> busList) {
         this.commonName = name;
-        this.distance = distance;
         this.busList = busList;
     }
 
-    public void addBusToBusStop(Bus bus) {
+    public void addBusToBusStop(ArrivingBus bus) {
         busList.add(bus);
     }
 }
