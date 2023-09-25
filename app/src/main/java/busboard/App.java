@@ -13,9 +13,9 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         BusStopFinder busStopFinder = new BusStopFinder();
 
-        System.out.print("Please enter a postcode: ");
-        String userInput = scanner.nextLine().replaceAll("\\s", "");
+        // System.out.print("Please enter a postcode: ");
+        // String userInput = scanner.nextLine().replaceAll("\\s", "");
         System.out.println("The nearest bus station is: ");
-        busStopFinder.doThis(userInput);
+        busStopFinder.doThis("se167tn");
     }
 }

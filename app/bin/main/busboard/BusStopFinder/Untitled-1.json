@@ -1,247 +1,249 @@
-{
-    "commonName": "Shipwright Road",
-    "modes": [
-        "bus"
-    ],
-    "lineModeGroups": [
-        {
-            "modeName": "bus",
-            "lineIdentifier": [
-                "381",
-                "c10",
-                "n381"
-            ],
-            "$type": "Tfl.Api.Presentation.Entities.LineModeGroup, Tfl.Api.Presentation.Entities"
-        }
-    ],
-    "distance": 291.23855368137515,
-    "stationNaptan": "490G000260",
-    "stopType": "NaptanOnstreetBusCoachStopPair",
-    "lon": -0.036867,
-    "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-    "placeType": "StopPoint",
-    "naptanId": "490G000260",
-    "icsCode": "1000980",
-    "lineGroup": [
-        {
-            "naptanIdReference": "490008899N",
-            "lineIdentifier": [
-                "381",
-                "c10",
-                "n381"
-            ],
-            "stationAtcoCode": "490G000260",
-            "$type": "Tfl.Api.Presentation.Entities.LineGroup, Tfl.Api.Presentation.Entities"
-        },
-        {
-            "naptanIdReference": "490008899S",
-            "lineIdentifier": [
-                "381",
-                "c10",
-                "n381"
-            ],
-            "stationAtcoCode": "490G000260",
-            "$type": "Tfl.Api.Presentation.Entities.LineGroup, Tfl.Api.Presentation.Entities"
-        }
-    ],
-    "children": [
-        {
-            "indicator": "->N",
-            "commonName": "Shipwright Road",
-            "modes": [],
-            "lineModeGroups": [],
-            "stationNaptan": "490G000260",
-            "lon": 0,
-            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "placeType": "StopPoint",
-            "naptanId": "490008899N",
-            "icsCode": "1000980",
-            "lineGroup": [],
-            "children": [],
-            "stopLetter": "->N",
-            "id": "490008899N",
-            "additionalProperties": [],
-            "lines": [],
-            "lat": 0,
-            "status": true
-        },
-        {
-            "indicator": "->S",
-            "commonName": "Shipwright Road",
-            "modes": [],
-            "lineModeGroups": [],
-            "stationNaptan": "490G000260",
-            "lon": -0.036867,
-            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "placeType": "StopPoint",
-            "naptanId": "490008899S",
-            "icsCode": "1000980",
-            "lineGroup": [],
-            "children": [],
-            "stopLetter": "->S",
-            "id": "490008899S",
-            "additionalProperties": [],
-            "lines": [],
-            "lat": 51.498026,
-            "status": true
-        }
-    ],
-    "id": "490G000260",
-    "additionalProperties": [],
-    "lines": [
-        {
-            "crowding": {
-                "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+[
+    {
+        "commonName": "Shipwright Road",
+        "modes": [
+            "bus"
+        ],
+        "lineModeGroups": [
+            {
+                "modeName": "bus",
+                "lineIdentifier": [
+                    "381",
+                    "c10",
+                    "n381"
+                ],
+                "$type": "Tfl.Api.Presentation.Entities.LineModeGroup, Tfl.Api.Presentation.Entities"
+            }
+        ],
+        "distance": 291.23855368137515,
+        "stationNaptan": "490G000260",
+        "stopType": "NaptanOnstreetBusCoachStopPair",
+        "lon": -0.036867,
+        "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+        "placeType": "StopPoint",
+        "naptanId": "490G000260",
+        "icsCode": "1000980",
+        "lineGroup": [
+            {
+                "naptanIdReference": "490008899N",
+                "lineIdentifier": [
+                    "381",
+                    "c10",
+                    "n381"
+                ],
+                "stationAtcoCode": "490G000260",
+                "$type": "Tfl.Api.Presentation.Entities.LineGroup, Tfl.Api.Presentation.Entities"
             },
-            "name": "381",
-            "id": "381",
-            "type": "Line",
-            "uri": "/Line/381",
-            "routeType": "Unknown",
-            "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-            "status": "Unknown"
-        },
-        {
-            "crowding": {
-                "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+            {
+                "naptanIdReference": "490008899S",
+                "lineIdentifier": [
+                    "381",
+                    "c10",
+                    "n381"
+                ],
+                "stationAtcoCode": "490G000260",
+                "$type": "Tfl.Api.Presentation.Entities.LineGroup, Tfl.Api.Presentation.Entities"
+            }
+        ],
+        "children": [
+            {
+                "indicator": "->N",
+                "commonName": "Shipwright Road",
+                "modes": [],
+                "lineModeGroups": [],
+                "stationNaptan": "490G000260",
+                "lon": 0,
+                "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+                "placeType": "StopPoint",
+                "naptanId": "490008899N",
+                "icsCode": "1000980",
+                "lineGroup": [],
+                "children": [],
+                "stopLetter": "->N",
+                "id": "490008899N",
+                "additionalProperties": [],
+                "lines": [],
+                "lat": 0,
+                "status": true
             },
-            "name": "C10",
-            "id": "c10",
-            "type": "Line",
-            "uri": "/Line/c10",
-            "routeType": "Unknown",
-            "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-            "status": "Unknown"
-        },
-        {
-            "crowding": {
-                "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+            {
+                "indicator": "->S",
+                "commonName": "Shipwright Road",
+                "modes": [],
+                "lineModeGroups": [],
+                "stationNaptan": "490G000260",
+                "lon": -0.036867,
+                "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+                "placeType": "StopPoint",
+                "naptanId": "490008899S",
+                "icsCode": "1000980",
+                "lineGroup": [],
+                "children": [],
+                "stopLetter": "->S",
+                "id": "490008899S",
+                "additionalProperties": [],
+                "lines": [],
+                "lat": 51.498026,
+                "status": true
+            }
+        ],
+        "id": "490G000260",
+        "additionalProperties": [],
+        "lines": [
+            {
+                "crowding": {
+                    "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+                },
+                "name": "381",
+                "id": "381",
+                "type": "Line",
+                "uri": "/Line/381",
+                "routeType": "Unknown",
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "status": "Unknown"
             },
-            "name": "N381",
-            "id": "n381",
-            "type": "Line",
-            "uri": "/Line/n381",
-            "routeType": "Unknown",
-            "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-            "status": "Unknown"
-        }
-    ],
-    "lat": 51.498026,
-    "status": true
-}
-{
-    "commonName": "Downtown Road",
-    "modes": [
-        "bus"
-    ],
-    "lineModeGroups": [
-        {
-            "modeName": "bus",
-            "lineIdentifier": [
-                "381",
-                "n381"
-            ],
-            "$type": "Tfl.Api.Presentation.Entities.LineModeGroup, Tfl.Api.Presentation.Entities"
-        }
-    ],
-    "distance": 376.69283535755284,
-    "stationNaptan": "490G00006186",
-    "stopType": "NaptanOnstreetBusCoachStopPair",
-    "lon": -0.035237,
-    "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-    "placeType": "StopPoint",
-    "naptanId": "490G00006186",
-    "icsCode": "1006186",
-    "lineGroup": [
-        {
-            "naptanIdReference": "490006186N",
-            "lineIdentifier": [
-                "381",
-                "n381"
-            ],
-            "stationAtcoCode": "490G00006186",
-            "$type": "Tfl.Api.Presentation.Entities.LineGroup, Tfl.Api.Presentation.Entities"
-        },
-        {
-            "naptanIdReference": "490006186S",
-            "lineIdentifier": [
-                "381",
-                "n381"
-            ],
-            "stationAtcoCode": "490G00006186",
-            "$type": "Tfl.Api.Presentation.Entities.LineGroup, Tfl.Api.Presentation.Entities"
-        }
-    ],
-    "children": [
-        {
-            "indicator": "->N",
-            "commonName": "Downtown Road",
-            "modes": [],
-            "lineModeGroups": [],
-            "stationNaptan": "490G00006186",
-            "lon": 0,
-            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "placeType": "StopPoint",
-            "naptanId": "490006186N",
-            "icsCode": "1006186",
-            "lineGroup": [],
-            "children": [],
-            "stopLetter": "->N",
-            "id": "490006186N",
-            "additionalProperties": [],
-            "lines": [],
-            "lat": 0,
-            "status": true
-        },
-        {
-            "indicator": "->S",
-            "commonName": "Downtown Road",
-            "modes": [],
-            "lineModeGroups": [],
-            "stationNaptan": "490G00006186",
-            "lon": -0.035237,
-            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "placeType": "StopPoint",
-            "naptanId": "490006186S",
-            "icsCode": "1006186",
-            "lineGroup": [],
-            "children": [],
-            "stopLetter": "->S",
-            "id": "490006186S",
-            "additionalProperties": [],
-            "lines": [],
-            "lat": 51.500085,
-            "status": true
-        }
-    ],
-    "id": "490G00006186",
-    "additionalProperties": [],
-    "lines": [
-        {
-            "crowding": {
-                "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+            {
+                "crowding": {
+                    "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+                },
+                "name": "C10",
+                "id": "c10",
+                "type": "Line",
+                "uri": "/Line/c10",
+                "routeType": "Unknown",
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "status": "Unknown"
             },
-            "name": "381",
-            "id": "381",
-            "type": "Line",
-            "uri": "/Line/381",
-            "routeType": "Unknown",
-            "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-            "status": "Unknown"
-        },
-        {
-            "crowding": {
-                "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+            {
+                "crowding": {
+                    "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+                },
+                "name": "N381",
+                "id": "n381",
+                "type": "Line",
+                "uri": "/Line/n381",
+                "routeType": "Unknown",
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "status": "Unknown"
+            }
+        ],
+        "lat": 51.498026,
+        "status": true
+    },
+    {
+        "commonName": "Downtown Road",
+        "modes": [
+            "bus"
+        ],
+        "lineModeGroups": [
+            {
+                "modeName": "bus",
+                "lineIdentifier": [
+                    "381",
+                    "n381"
+                ],
+                "$type": "Tfl.Api.Presentation.Entities.LineModeGroup, Tfl.Api.Presentation.Entities"
+            }
+        ],
+        "distance": 376.69283535755284,
+        "stationNaptan": "490G00006186",
+        "stopType": "NaptanOnstreetBusCoachStopPair",
+        "lon": -0.035237,
+        "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+        "placeType": "StopPoint",
+        "naptanId": "490G00006186",
+        "icsCode": "1006186",
+        "lineGroup": [
+            {
+                "naptanIdReference": "490006186N",
+                "lineIdentifier": [
+                    "381",
+                    "n381"
+                ],
+                "stationAtcoCode": "490G00006186",
+                "$type": "Tfl.Api.Presentation.Entities.LineGroup, Tfl.Api.Presentation.Entities"
             },
-            "name": "N381",
-            "id": "n381",
-            "type": "Line",
-            "uri": "/Line/n381",
-            "routeType": "Unknown",
-            "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-            "status": "Unknown"
-        }
-    ],
-    "lat": 51.500085,
-    "status": true
-}
+            {
+                "naptanIdReference": "490006186S",
+                "lineIdentifier": [
+                    "381",
+                    "n381"
+                ],
+                "stationAtcoCode": "490G00006186",
+                "$type": "Tfl.Api.Presentation.Entities.LineGroup, Tfl.Api.Presentation.Entities"
+            }
+        ],
+        "children": [
+            {
+                "indicator": "->N",
+                "commonName": "Downtown Road",
+                "modes": [],
+                "lineModeGroups": [],
+                "stationNaptan": "490G00006186",
+                "lon": 0,
+                "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+                "placeType": "StopPoint",
+                "naptanId": "490006186N",
+                "icsCode": "1006186",
+                "lineGroup": [],
+                "children": [],
+                "stopLetter": "->N",
+                "id": "490006186N",
+                "additionalProperties": [],
+                "lines": [],
+                "lat": 0,
+                "status": true
+            },
+            {
+                "indicator": "->S",
+                "commonName": "Downtown Road",
+                "modes": [],
+                "lineModeGroups": [],
+                "stationNaptan": "490G00006186",
+                "lon": -0.035237,
+                "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+                "placeType": "StopPoint",
+                "naptanId": "490006186S",
+                "icsCode": "1006186",
+                "lineGroup": [],
+                "children": [],
+                "stopLetter": "->S",
+                "id": "490006186S",
+                "additionalProperties": [],
+                "lines": [],
+                "lat": 51.500085,
+                "status": true
+            }
+        ],
+        "id": "490G00006186",
+        "additionalProperties": [],
+        "lines": [
+            {
+                "crowding": {
+                    "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+                },
+                "name": "381",
+                "id": "381",
+                "type": "Line",
+                "uri": "/Line/381",
+                "routeType": "Unknown",
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "status": "Unknown"
+            },
+            {
+                "crowding": {
+                    "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+                },
+                "name": "N381",
+                "id": "n381",
+                "type": "Line",
+                "uri": "/Line/n381",
+                "routeType": "Unknown",
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "status": "Unknown"
+            }
+        ],
+        "lat": 51.500085,
+        "status": true
+    }
+]

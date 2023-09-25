@@ -1,8 +1,12 @@
 package busboard.BusStopFinder;
 
+import java.util.Iterator;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import com.google.gson.JsonObject;
 
 import busboard.JsonFetcher.JsonFetcher;
 
@@ -22,14 +26,14 @@ public class BusStopFinder {
             return null;
         }
     }
-    //todo: create parser classes for each parser method
+    // todo: create parser classes for each parser method
 
     private BusStops getBusStops(String JsonLikeString) {
         try {
             JSONObject outer = new JSONObject(JsonLikeString);
             JSONArray stopPoints = outer.getJSONArray("stopPoints");
-            for (int i = 0; i <= stopPoints.length(); i++) {
-                JSONObject inner = (JSONObject) stopPoints.get(i);
+            for (int i = 0; i < stopPoints.length(); i++) {
+                System.out.println(stopPoints.getJSONObject(i));
             }
             return null;
         } catch (JSONException e) {

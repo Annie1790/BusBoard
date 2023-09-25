@@ -9,6 +9,7 @@ public class BusStops {
 
     public BusStops(String name, String stopId, ArrayList<ArrivingBus> busList) {
         this.commonName = name;
+        this.stopId = stopId;
         this.busList = busList;
     }
 
